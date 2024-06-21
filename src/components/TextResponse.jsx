@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-import './TextResponse.css';
 
 const TextResponse = () => {
   const { response, loading } = useContext(AppContext);
