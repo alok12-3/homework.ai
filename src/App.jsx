@@ -9,6 +9,7 @@ import DashboardPageTeacher from './pages/DashboardPageTeacher';
 import DashboardPageStudent from './pages/DashboardPageStudent';
 import AllHomeworksPageTeacher from './pages/AllHomeworksPageStudent';
 import AllHomeworksPageStudent from './pages/AllHomeworksPageTeacher';
+import CreateHomeworkPage from './pages/CreateHomeworkPage';
 
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
         <Route path="/teacher or student/class/subject/homework" element={<HomeworkPage />} />
         <Route path="/teacher/class/subject/homeworks" element={<AllHomeworksPageTeacher />} />
         <Route path="/student/class/subject/homeworks" element={<AllHomeworksPageStudent/>} />
+        <Route path="/teacher/dashboard/create" element={<CreateHomeworkPage/>} />
       </Routes>
     </Router>
   </AppProvider>
