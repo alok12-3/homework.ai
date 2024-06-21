@@ -7,7 +7,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
 const runocr = async (imageFile) => {
-  const prompt = "you are a image to text extracting model so extract text from image and nothing else";
+  const prompt = "the image will provide you a question and answer of social science subject of class 10 ncert bord and you have to judge the answer according to marking patern used by teachers. so at first give summery that the answer provided is correct, could be improved, or wrong or excellent then  you have to give response in 3 way that is first what is good things in answer, second what could be improved if it is not a perfect answer written and last thing is assign marks out of 5   at last give the perfect answer for that question";
 
   const reader = new FileReader();
   reader.readAsDataURL(imageFile);
