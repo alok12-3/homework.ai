@@ -12,7 +12,7 @@ import AllHomeworksPageStudent from './pages/AllHomeworksPageTeacher';
 import CreateHomeworkPage from './pages/CreateHomeworkPage';
 
 const App = () => {
-  const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai";
+  const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai/";
 
   return (
     <AppProvider>
@@ -34,4 +34,3 @@ const App = () => {
 };
 
 export default App;
-
