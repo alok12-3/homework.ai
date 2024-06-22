@@ -38,7 +38,7 @@ import CreateHomeworkPage from './pages/CreateHomeworkPage';
 import Checker from './usp/Checker';
 
 const App = () => {
-  const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai/";
+  const basename = "/homework.ai/";
 
   return (
     <AppProvider>
