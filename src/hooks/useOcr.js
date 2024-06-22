@@ -44,8 +44,6 @@
 // };
 
 // export default useOCR;
-
-
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import runocr from '../config/geminiocr';
@@ -53,7 +51,6 @@ import formatResponse from '../utils/formatResponse';
 
 const useOCR = () => {
   const { image, setLoading, setResponse } = useContext(AppContext);
-
   const fetchOcr = async () => {
     if (!image) {
       alert("Please upload an image first.");
@@ -73,5 +70,4 @@ const useOCR = () => {
 
   return { fetchOcr };
 };
-
 export default useOCR;
