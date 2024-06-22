@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import useOCR from '../hooks/useOcr';
 
-
 const FileInput = () => {
   const { setImages } = useContext(AppContext);
   const { fetchOcr } = useOCR();

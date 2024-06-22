@@ -2,7 +2,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
-
 const ImagePreview = () => {
   const { images } = useContext(AppContext);
 

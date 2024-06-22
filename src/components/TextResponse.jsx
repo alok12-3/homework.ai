@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
-
 const TextResponse = () => {
   const { responses, loading } = useContext(AppContext);
 
