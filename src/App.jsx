@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from 'react';
 // import { AppProvider } from './context/AppContext';
 // import Header from './components/Header';
@@ -49,6 +50,40 @@ const App = () => {
       </div>
       </div>
     </AppContext.Provider>
+=======
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AppProvider } from './context/AppContext';
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUpPage';
+import HomeworkPage from './pages/HomeworkPage';
+import DashboardPageTeacher from './pages/DashboardPageTeacher';
+import DashboardPageStudent from './pages/DashboardPageStudent';
+import AllHomeworksPageTeacher from './pages/AllHomeworksPageStudent';
+import AllHomeworksPageStudent from './pages/AllHomeworksPageTeacher';
+import CreateHomeworkPage from './pages/CreateHomeworkPage';
+
+const App = () => {
+  const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai/";
+
+  return (
+    <AppProvider>
+      <Router basename={basename}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/teacher/dashboard" element={<DashboardPageTeacher />} />
+          <Route path="/student/class/dashboard" element={<DashboardPageStudent />} />
+          <Route path="/teacher or student/class/subject/homework" element={<HomeworkPage />} />
+          <Route path="/teacher/class/subject/homeworks" element={<AllHomeworksPageTeacher />} />
+          <Route path="/student/class/subject/homeworks" element={<AllHomeworksPageStudent />} />
+          <Route path="/teacher/dashboard/create" element={<CreateHomeworkPage />} />
+        </Routes>
+      </Router>
+    </AppProvider>
+>>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
   );
 };
 
