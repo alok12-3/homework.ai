@@ -132,14 +132,14 @@ const Navbar = () => {
             </li>
             <li className="md:hidden">
               <Link to="/login">
-                <button className="w-full box-border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 h-full">
+                <button className="w-full mt-4 mb-2 box-border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 h-full">
                   Login
                 </button>
               </Link>
             </li>
             <li className="md:hidden">
               <Link to="/signup">
-                <button className="w-full box-border border border-blue-700 text-blue-500 bg-white hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 h-full">
+                <button className="w-full mt-2 box-border border border-blue-700 text-blue-500 bg-white hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 h-full">
                   Sign Up
                 </button>
               </Link>
