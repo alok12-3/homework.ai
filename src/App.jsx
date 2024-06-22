@@ -38,11 +38,11 @@ import CreateHomeworkPage from './pages/CreateHomeworkPage';
 import Checker from './usp/Checker';
 
 const App = () => {
-  const basename = "/homework.ai/";
+
 
   return (
     <AppProvider>
-      <Router basename={basename}>
+      <Router >
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
