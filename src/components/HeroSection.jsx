@@ -2,49 +2,46 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-8 lg:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="lg:col-span-7 flex flex-col justify-center">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Payments tool for software companies
+    <section class="bg-white dark:bg-gray-900">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="lg:col-span-6 flex flex-col justify-center">
+          <h1 class="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+            Empowering Teachers and Learners with Innovative Tools
           </h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            From checkout to global sales tax compliance, companies around the
-            world use Flowbite to simplify their payment stack.
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            By leveraging automation, educational institutions can effectively
+            manage administrative tasks, personalize learning experiences, and
+            provide real-time feedback to students.
           </p>
           <div>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-700 dark:hover:bg-green-800 dark:focus:ring-green-900 dark:text-white"
+              class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-700 dark:hover:bg-green-800 dark:focus:ring-green-900 dark:text-white"
             >
               Get started
               <svg
-                className="w-5 h-5 ml-2 -mr-1"
+                class="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fillRule="evenodd"
+                  fill-rule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
+                  clip-rule="evenodd"
                 ></path>
               </svg>
             </a>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
-              Speak to Sales
+              Learn more
             </a>
           </div>
         </div>
-        <div className="lg:col-span-5 flex justify-center lg:justify-end">
-          <img
-            className="lg:max-h-80"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-            alt="mockup"
-          />
+        <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
+          <img src="./mockup.png" alt="mockup"></img>
         </div>
       </div>
     </section>
