@@ -5,11 +5,7 @@ import React from 'react';
 const HomeworkPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold mb-6">Create Homework</h1>
-
-      {/* Manual Input Section */}
-      
-      {/* Upload PDF Section */}
+      <h1 className="text-4xl font-bold mb-6">Create Homework</h1>      
       <div className="bg-white p-6 rounded shadow-md mb-6">
         <h2 className="text-2xl font-bold mb-4">Upload question files</h2>
         <div className="mb-4">
@@ -27,7 +23,6 @@ const HomeworkPage = () => {
             Upload
           </button>
         </div>
-
         <h2 className="text-2xl font-bold mb-4">Upload answer files</h2>
         <div className="mb-4">
           <input
