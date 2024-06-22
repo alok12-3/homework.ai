@@ -20,7 +20,7 @@ const Navbar = () => {
             className="h-8"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">
+          <span className="self-center text-3xl font-bold whitespace-nowrap">
             SkoolBot
           </span>
         </a>
