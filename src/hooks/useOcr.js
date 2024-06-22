@@ -46,26 +46,62 @@
 // export default useOCR;
 
 
+// import { useContext } from 'react';
+// import { AppContext } from '../context/AppContext';
+// import runocr from '../config/geminiocr';
+// import formatResponse from '../utils/formatResponse';
+
+// const useOCR = () => {
+//   const { image, setLoading, setResponse } = useContext(AppContext);
+
+//   const fetchOcr = async () => {
+//     if (!image) {
+//       alert("Please upload an image first.");
+//       return;
+//     }
+//     setLoading(true);
+//     try {
+//       const res = await runocr(image);
+//       setResponse(formatResponse(res));
+//     } catch (error) {
+//       console.error("OCR error:", error);
+//       setResponse("Error performing OCR.");
+//     } finally {
+//       setLoading(false); // Ensure loading is stopped in both success and error cases
+//     }
+//   };
+
+//   return { fetchOcr };
+// };
+
+// export default useOCR;
+
+
+
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import runocr from '../config/geminiocr';
 import formatResponse from '../utils/formatResponse';
 
 const useOCR = () => {
-  const { image, setLoading, setResponse } = useContext(AppContext);
+  const { images, setLoading, setResponses } = useContext(AppContext);
 
   const fetchOcr = async () => {
-    if (!image) {
-      alert("Please upload an image first.");
+    if (images.length === 0) {
+      alert("Please upload images first.");
       return;
     }
     setLoading(true);
+    const responses = [];
     try {
-      const res = await runocr(image);
-      setResponse(formatResponse(res));
+      for (const image of images) {
+        const res = await runocr(image);
+        responses.push(formatResponse(res));
+      }
+      setResponses(responses);
     } catch (error) {
       console.error("OCR error:", error);
-      setResponse("Error performing OCR.");
+      setResponses(["Error performing OCR."]);
     } finally {
       setLoading(false); // Ensure loading is stopped in both success and error cases
     }
