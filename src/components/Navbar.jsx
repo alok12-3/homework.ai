@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 mr-2 ml-2">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="https://flowbite.com/"
@@ -129,6 +129,18 @@ const Navbar = () => {
               >
                 Contact
               </a>
+            </li>
+            <li>
+              <Link
+                to="/teacher or student/class/subject/homework"
+                className={`block py-2 px-3 md:p-0 text-gray-900 ${
+                  isOpen
+                    ? "hover:text-blue-700 dark:hover:text-blue-500 dark:hover:bg-gray-700"
+                    : "hover:text-blue-700 dark:hover:text-blue-500"
+                } dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-transparent rounded`}
+              >
+                Demo
+              </Link>
             </li>
             <li className="md:hidden">
               <Link to="/login">
