@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import React from 'react';
 // import { AppProvider } from './context/AppContext';
 // import Header from './components/Header';
@@ -22,35 +21,8 @@
 
 // export default App;
 
-import React, { useState } from 'react';
-import FileInput from './components/FileInput';
-import ImagePreview from './components/ImagePreview';
-import TextResponse from './components/TextResponse';
-import { AppContext } from './context/AppContext';
-import './App.css';
-import Header from './components/Header';
 
-const App = () => {
-  const [images, setImages] = useState([]);
-  const [responses, setResponses] = useState([]);
-  const [loading, setLoading] = useState(false);
 
-  return (
-    <AppContext.Provider value={{ images, setImages, responses, setResponses, loading, setLoading }}>
-      <div>
-        <Header/>
-      <div className="app-container flex h-screen bg-blue-100">
-        <div className="w-1/2 flex flex-col items-center p-1 overflow-y-auto">
-          <FileInput />
-          <ImagePreview />
-        </div>
-        <div className="w-1/2 p-4 overflow-y-auto">
-          <TextResponse />
-        </div>
-      </div>
-      </div>
-    </AppContext.Provider>
-=======
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
@@ -63,6 +35,7 @@ import DashboardPageStudent from './pages/DashboardPageStudent';
 import AllHomeworksPageTeacher from './pages/AllHomeworksPageStudent';
 import AllHomeworksPageStudent from './pages/AllHomeworksPageTeacher';
 import CreateHomeworkPage from './pages/CreateHomeworkPage';
+import Checker from './usp/Checker';
 
 const App = () => {
   const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai/";
@@ -80,10 +53,10 @@ const App = () => {
           <Route path="/teacher/class/subject/homeworks" element={<AllHomeworksPageTeacher />} />
           <Route path="/student/class/subject/homeworks" element={<AllHomeworksPageStudent />} />
           <Route path="/teacher/dashboard/create" element={<CreateHomeworkPage />} />
+          <Route path="/demo" element={<Checker />} />
         </Routes>
       </Router>
     </AppProvider>
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
   );
 };
 

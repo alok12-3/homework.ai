@@ -44,55 +44,14 @@
 // };
 
 // export default useOCR;
-<<<<<<< HEAD
-
-
-// import { useContext } from 'react';
-// import { AppContext } from '../context/AppContext';
-// import runocr from '../config/geminiocr';
-// import formatResponse from '../utils/formatResponse';
-
-// const useOCR = () => {
-//   const { image, setLoading, setResponse } = useContext(AppContext);
-
-//   const fetchOcr = async () => {
-//     if (!image) {
-//       alert("Please upload an image first.");
-//       return;
-//     }
-//     setLoading(true);
-//     try {
-//       const res = await runocr(image);
-//       setResponse(formatResponse(res));
-//     } catch (error) {
-//       console.error("OCR error:", error);
-//       setResponse("Error performing OCR.");
-//     } finally {
-//       setLoading(false); // Ensure loading is stopped in both success and error cases
-//     }
-//   };
-
-//   return { fetchOcr };
-// };
-
-// export default useOCR;
-
-
-
-=======
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import runocr from '../config/geminiocr';
 import formatResponse from '../utils/formatResponse';
 
 const useOCR = () => {
-<<<<<<< HEAD
   const { images, setLoading, setResponses } = useContext(AppContext);
 
-=======
-  const { image, setLoading, setResponse } = useContext(AppContext);
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
   const fetchOcr = async () => {
     if (images.length === 0) {
       alert("Please upload images first.");

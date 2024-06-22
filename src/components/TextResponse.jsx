@@ -1,9 +1,5 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-<<<<<<< HEAD
-
-=======
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
 
 const TextResponse = () => {
   const { responses, loading } = useContext(AppContext);

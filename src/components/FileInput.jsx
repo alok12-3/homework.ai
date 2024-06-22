@@ -2,10 +2,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import useOCR from '../hooks/useOcr';
-<<<<<<< HEAD
-
-=======
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
 
 const FileInput = () => {
   const { setImages } = useContext(AppContext);
@@ -16,7 +12,6 @@ const FileInput = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="flex flex-col items-center justify-center h-auto bg-gray-100 p-4 w-full max-w-md mx-auto">
       <input
         type="file"
@@ -38,11 +33,6 @@ const FileInput = () => {
       >
         Submit
       </button>
-=======
-    <div className="file-input">
-      <input type="file" id="file" accept="image/*" onChange={(e) => setImage(e.target.files[0])} />
-      <button onClick={fetchOcr}>OCR</button>
->>>>>>> 2a43ef633d95cdd0c4fca278b6499120743ea142
     </div>
   );
 };
