@@ -31,6 +31,6 @@ const runocr = async (imageFile) => {
     };
     reader.onerror = (error) => reject(error);
   });
-}
+};
 
 export default runocr;

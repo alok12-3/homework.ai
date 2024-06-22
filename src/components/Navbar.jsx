@@ -132,7 +132,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/teacher or student/class/subject/homework"
+                to="/demo"
                 className={`block py-2 px-3 md:p-0 text-gray-900 ${
                   isOpen
                     ? "hover:text-blue-700 dark:hover:text-blue-500 dark:hover:bg-gray-700"

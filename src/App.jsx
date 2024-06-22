@@ -1,3 +1,28 @@
+// import React from 'react';
+// import { AppProvider } from './context/AppContext';
+// import Header from './components/Header';
+// import ImagePreview from './components/ImagePreview';
+// import FileInput from './components/FileInput';
+// import TextResponse from './components/TextResponse';
+// import './App.css';
+
+// const App = () => (
+//   <AppProvider>
+//     <div className="container">
+//       <Header />
+//       <div className="content">
+//         <ImagePreview />
+//         <FileInput />
+//         <TextResponse />
+//       </div>
+//     </div>
+//   </AppProvider>
+// );
+
+// export default App;
+
+
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
@@ -10,13 +35,14 @@ import DashboardPageStudent from './pages/DashboardPageStudent';
 import AllHomeworksPageTeacher from './pages/AllHomeworksPageStudent';
 import AllHomeworksPageStudent from './pages/AllHomeworksPageTeacher';
 import CreateHomeworkPage from './pages/CreateHomeworkPage';
+import Checker from './usp/Checker';
 
 const App = () => {
-  const basename = import.meta.env.VITE_PUBLIC_URL || "/homework.ai/";
+
 
   return (
     <AppProvider>
-      <Router basename={basename}>
+      <Router >
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
@@ -27,6 +53,7 @@ const App = () => {
           <Route path="/teacher/class/subject/homeworks" element={<AllHomeworksPageTeacher />} />
           <Route path="/student/class/subject/homeworks" element={<AllHomeworksPageStudent />} />
           <Route path="/teacher/dashboard/create" element={<CreateHomeworkPage />} />
+          <Route path="/demo" element={<Checker />} />
         </Routes>
       </Router>
     </AppProvider>
