@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 const TextResponse = () => {
   const { responses, loading } = useContext(AppContext);
@@ -11,8 +11,13 @@ const TextResponse = () => {
       ) : (
         responses.map((response, index) => (
           <div key={index} className="mb-4">
-            <h3 className="text-lg font-semibold text-gray-700">Image {index + 1}</h3>
-            <p className=" text-gray-600" dangerouslySetInnerHTML={{ __html: response }} />
+            <h3 className="text-lg font-semibold text-gray-700">
+              Image {index + 1}
+            </h3>
+            <p
+              className=" text-gray-600"
+              dangerouslySetInnerHTML={{ __html: response }}
+            />
           </div>
         ))
       )}
