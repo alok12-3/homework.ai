@@ -21,7 +21,6 @@ function DashboardPageTeacher() {
       <Menu />
       <div className="main">
         <div className="container">
-          <div className="menuContainer"></div>
           <div className="contentContainer">
             <QueryClientProvider client={queryClient}>
               <Outlet />

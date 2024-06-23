@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./context/AppContext";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignUpPage";
+import SignPage from "./pages/SignUpPage";
 import HomeworkPage from "./pages/HomeworkPage";
 import DashboardPageTeacher from "./pages/DashboardPageTeacher";
 import DashboardPageStudent from "./pages/DashboardPageStudent";
@@ -22,7 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signup" element={<SignPage />} />
           <Route path="/" element={<DashboardPageTeacher />} />
           <Route
             path="/student/class/dashboard"
