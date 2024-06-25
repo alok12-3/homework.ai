@@ -2,7 +2,6 @@
 import Home from "./home/Home";
 import { useState } from "react";
 import Assignment from "./Assignment";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import Users from "./users/Users";
 // import Products from "./products/Products";
 import Navbar from "../components/navbar/NavbarDashboard";

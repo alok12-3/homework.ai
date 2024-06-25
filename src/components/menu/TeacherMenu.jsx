@@ -47,7 +47,7 @@ const Menu = ({ onSelectTab }) => {
             <li>
               <button
                 type="button"
-                className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className=" bg-gray-200 flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 aria-controls="dropdown-example"
                 onClick={toggleDropdown}
                 aria-expanded={isOpen ? "true" : "false"}
