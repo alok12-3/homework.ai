@@ -64,7 +64,7 @@ const ProfileDropdown = () => {
             <p className="text-sm text-gray-500">St Paul's English School</p>
           </div>
           <div className="p-4 text-center">
-            <button className="w-full px-4 py-2 text-blue-700 border rounded-md hover:bg-blue-100 flex items-center justify-center space-x-2 text-white">
+            <button className="w-full bg-blue-600 px-4 py-2 text-blue-700 border rounded-md hover:bg-blue-500 flex items-center justify-center space-x-2 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -9,11 +9,12 @@ import DashboardPageTeacher from "./pages/DashboardPageTeacher";
 import DashboardPageStudent from "./pages/DashboardPageStudent";
 import AllHomeworksPageTeacher from "./pages/AllHomeworksPageStudent";
 import AllHomeworksPageStudent from "./pages/AllHomeworksPageTeacher";
-import CreateHomeworkPage from "./pages/CreateHomeworkPage";
+import CreateHomeworkPage from "./pages/Assignment";
 import Checker from "./usp/Checker";
 import Home from "./pages/home/Home";
-import Product from "./pages/product/Product";
-import Products from "./pages/products/Products";
+import Product from "./pages/student/Product";
+import Products from "./pages/students/Products";
+import Assignment from "./pages/Assignment";
 
 const App = () => {
   return (
@@ -45,7 +46,8 @@ const App = () => {
             element={<CreateHomeworkPage />}
           />
           <Route path="/demo" element={<Checker />} />
-          <Route path="/teacher/dashboard" element={<DashboardPageTeacher />} />
+          <Route path="/teacher/home" element={<DashboardPageTeacher />} />
+          <Route path="/teacher/assignment" element={<Assignment />} />
         </Routes>
       </Router>
     </AppProvider>
